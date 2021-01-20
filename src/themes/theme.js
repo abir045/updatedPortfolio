@@ -1,4 +1,4 @@
 export const theme = {
     primary: "#0b0c10",
-    textColor: "#4077cf"
+    textColor: "#7babed"
 };
