@@ -17,10 +17,10 @@ const About = () => {
             <h1 className="pt-3 text-center font-details pb-3">About me</h1>
 
             <Container>
-                <Row classname="pt-3 pb-5 align-items-center">
+                <Row className="pt-3 pb-5 align-items-center">
                     {/* profile image */}
                     <Col xs={12} md={6}>
-                        <Row classname="justify-content-center mb-2 mr-2">
+                        <Row className="justify-content-center mb-2 mr-2">
                          <Image className="profile justify-content-end" alt="profile" src={profile} roundedCircle fluid />
                         </Row>
                     

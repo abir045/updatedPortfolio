@@ -5,10 +5,14 @@ import { Parallax } from 'react-parallax';
 import Container from 'react-bootstrap/Container';
 import './App.css';
 //components
-import MyNavbar from "./components/my-navbar/mynavbar.component";
+import MyNavbar from "./components/my-navbar/mynavbar.js";
 import MyCarousel from "./components/my-carousel/my-carousel.js";
 import TitleMessage from "./components/title-message/title";
 import About from "./pages/about/about";
+import Skills from "./pages/skills/skills";
+
+
+
 const App = () => {
   return (
     <div className="App" style={{position:"relative"}}>
@@ -18,21 +22,33 @@ const App = () => {
       {/* about me section */}
       <div>  
       <Parallax blur={{min:-1000, max:1000}}
-       strength={-200} 
+        
        bgImage={require("./assets/img/background.jpg")}
-        bgImageAlt="the cat"
-         strength={200}>
-         <div>  
+        bgImageAlt="the background"
+         strength={-200}
+         >
+         <div> 
+
      <Container className="container-box rounded">
-       <Fade left duration={500} >
+       <Fade  duration={500} >
          <About/>
        </Fade>
-     
-       </Container>   
+     </Container>
+     </div>
+        </Parallax>   
         </div>
-    </Parallax>
-   </div>
-   </div>
+ 
+     
+     <Container className="container-box rounded">
+       <Fade duration={500}>
+        <Skills/>
+       </Fade>
+      </Container>
+     </div>
+      
+ 
+ 
+   
   );
 }
 
