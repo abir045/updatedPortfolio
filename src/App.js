@@ -10,6 +10,8 @@ import MyCarousel from "./components/my-carousel/my-carousel.js";
 import TitleMessage from "./components/title-message/title";
 import About from "./pages/about/about";
 import Skills from "./pages/skills/skills";
+import ProjectTimeline from './components/project-timeline/project-timeline';
+import Slide from "react-reveal/Slide";
 
 
 
@@ -38,14 +40,25 @@ const App = () => {
         </Parallax>   
         </div>
  
-     
+     <div>
      <Container className="container-box rounded">
        <Fade duration={500}>
         <Skills/>
        </Fade>
       </Container>
      </div>
+    
       
+    {/* project section */}
+       <div>
+     <Container className="container-box rounded">
+       <Slide  bottom duration={500}>
+        <ProjectTimeline/>
+       </Slide>
+      </Container>
+     </div>
+     </div>
+
  
  
    
