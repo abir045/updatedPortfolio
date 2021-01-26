@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 
 const MyScroll = styled.div`
@@ -30,7 +30,7 @@ const ScrollDown = () => {
             </div>
             
         </MyScroll>
-    )
-}
+    );
+};
 
 export default ScrollDown

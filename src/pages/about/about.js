@@ -33,7 +33,7 @@ const About = () => {
                            Communication Technology (ICT)
                           masters graduate from the University
                           of Agder, Norway.<br/> 
-                          I am a frontend developer with React.js, Express.js,Node.js and mongoDb
+                          I am a frontend developer with a passion to build dynamic websites with the most updated technologies.
                           <br/> 
                            {/* description */}
                        </Row>
