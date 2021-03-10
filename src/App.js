@@ -35,7 +35,7 @@ const App = () => {
         bgImageAlt=""
         strength={-200}
         > 
-         <div style={{ height: '200px' }} />
+        
         <div>
         <Container className="container-box rounded">
         <Fade  duration={500} >

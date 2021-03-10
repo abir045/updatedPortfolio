@@ -9,6 +9,7 @@ import "./project-timeline.css";
 import covid19 from "../../assets/img/projects/covid19.png";
 import ecommerce from "../../assets/img/projects/ecommerce.png";
 import tt from "../../assets/img/projects/twaratTechnology.png";
+import CRWN from '../../assets/img/projects/CRWN.png';
 
 
 
@@ -30,6 +31,9 @@ import netlify from "../../assets/img/skills/netlify.svg";
 import postgresql from "../../assets/img/skills/postgresql.svg";
 import mongoDB from "../../assets/img/skills/mongodb.svg";
 import git from "../../assets/img/skills/git.svg";
+import reduxlogo from '../../assets/img/skills/redux-logo.svg';
+import stripe from '../../assets/img/skills/stripe.svg';
+import firebase from '../../assets/img/skills/firebase-logo.svg';
 
 
 const ProjectTimeline = () => {
@@ -266,7 +270,7 @@ const ProjectTimeline = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is an ecommerce site for an electronics company.
+                        <strong>Description:</strong> This is an e-commerce site for an electronics company.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
@@ -291,6 +295,9 @@ const ProjectTimeline = () => {
                             </span>
                           </li>
                           
+
+
+                        
                         </ul>
                       </Card.Body>
                     </Accordion.Collapse>
@@ -309,6 +316,120 @@ const ProjectTimeline = () => {
               </div>
             </div>
           </ImageEvent>
+
+          {/* Reat based E-commerce project */}
+
+          <ImageEvent
+            date="10/0/2021"
+            className="text-center"
+            text="CRWN-Clothing"
+            src={CRWN}
+            alt="ecommerce"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is an ecommerce website for A demo Clothing Company.
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>Purchase Clothing, neakers and accessories for Men and Woman. </li>
+                          <li>Powered by React  </li>
+                         
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={reactjs}
+                                alt="JS"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              React 
+                            </span>
+
+
+
+                          </li>
+                       
+                         
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={reduxlogo}
+                                alt="redux"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                            Redux
+                            </span>
+                          </li>
+
+                            <li>
+                            <span className="p-2">
+                              <Image
+                                src={stripe}
+                                alt="redux"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                            Stripe API
+                            </span>
+                          </li>
+
+                             <li>
+                            <span className="p-2">
+                              <Image
+                                src={firebase}
+                                alt="firebase"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                            Firebase API
+                            </span>
+                          </li>
+                          
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                <UrlButton
+                  href="https://demostore2.herokuapp.com/"
+                  target="_blank"
+                >
+                  SEE LIVE
+                </UrlButton>
+
+                 <UrlButton
+                  href="https://github.com/abir045/crwn-clothing"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+       
+              
+              </div>
+            </div>
+          </ImageEvent>
+   
    
 
 
